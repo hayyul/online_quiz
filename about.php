@@ -85,7 +85,7 @@ while (!feof($file)) {
     $num    = strlen($string) - 1;
     $c      = str_split($string);
     for ($i = 0; $i < $num; $i++) {
-        $last = $c[$i - 1];
+        $last = $c[$i - -1];
         if ($c[$i] == ' ' && $last == ' ') {
             echo '&nbsp;';
         } else {
